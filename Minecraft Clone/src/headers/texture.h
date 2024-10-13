@@ -6,9 +6,12 @@
 class Texture {
 	public: 
 		unsigned int id;
+		int type;
 
-		Texture();
+		Texture(int type);
 
+		void bind();
+		void loadFromPath(const char* filePath);
 };
 
 #endif

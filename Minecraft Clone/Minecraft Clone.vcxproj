@@ -111,7 +111,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>E:\VS22 Repos\Minecraft Clone\Minecraft Clone\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\VS22 Repos\Minecraft Clone\Minecraft Clone\dependencies\include;E:\VS22 Repos\Minecraft Clone\Minecraft Clone\src\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,7 +129,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>E:\VS22 Repos\Minecraft Clone\Minecraft Clone\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\VS22 Repos\Minecraft Clone\Minecraft Clone\dependencies\include;E:\VS22 Repos\Minecraft Clone\Minecraft Clone\src\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,26 +141,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\implementations\elementBuffer.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="shader.cpp" />
-    <ClCompile Include="stbImageImplementation.cpp" />
-    <ClCompile Include="texture.cpp" />
-    <ClCompile Include="vertexArray.cpp" />
-    <ClCompile Include="vertexBuffer.cpp" />
-    <ClCompile Include="window.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\implementations\shader.cpp" />
+    <ClCompile Include="src\implementations\stbImageImplementation.cpp" />
+    <ClCompile Include="src\implementations\texture.cpp" />
+    <ClCompile Include="src\implementations\vertexArray.cpp" />
+    <ClCompile Include="src\implementations\vertexBuffer.cpp" />
+    <ClCompile Include="src\implementations\window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="shader.h" />
-    <ClInclude Include="state.h" />
-    <ClInclude Include="texture.h" />
-    <ClInclude Include="vertexArray.h" />
-    <ClInclude Include="vertexBuffer.h" />
-    <ClInclude Include="window.h" />
+    <ClInclude Include="src\headers\elementBuffer.h" />
+    <ClInclude Include="src\headers\shader.h" />
+    <ClInclude Include="src\headers\state.h" />
+    <ClInclude Include="src\headers\texture.h" />
+    <ClInclude Include="src\headers\vertexArray.h" />
+    <ClInclude Include="src\headers\vertexBuffer.h" />
+    <ClInclude Include="src\headers\window.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="fragment.shader" />
-    <None Include="vertex.shader" />
+    <None Include=".gitignore" />
+    <None Include="src\shaders\fragment.shader" />
+    <None Include="src\shaders\vertex.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
