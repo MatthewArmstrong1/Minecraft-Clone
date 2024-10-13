@@ -76,6 +76,5 @@
     <None Include="src\shaders\fragment.shader">
       <Filter>Source Files\Shader Source Files</Filter>
     </None>
-    <None Include=".gitignore" />
   </ItemGroup>
 </Project>

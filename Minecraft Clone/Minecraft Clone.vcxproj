@@ -161,7 +161,6 @@
     <ClInclude Include="src\headers\window.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".gitignore" />
     <None Include="src\shaders\fragment.shader" />
     <None Include="src\shaders\vertex.shader" />
   </ItemGroup>
