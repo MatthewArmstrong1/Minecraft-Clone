@@ -164,6 +164,9 @@
     <None Include="src\shaders\fragment.shader" />
     <None Include="src\shaders\vertex.shader" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\textures\grass.jpg" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

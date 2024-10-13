@@ -7,6 +7,7 @@
 #include <GLFW/glfw3.h>
 #include "shader.h"
 #include "vertexArray.h"
+#include "texture.h"
 
 class Window {
 	public:
@@ -18,7 +19,7 @@ class Window {
 		void windowLoop();
 	private:
 		void destroy();
-		void render(VertexArray vertexArrays[], int arraySize);
+		void render(VertexArray vertexArrays[], int arraySize, Texture textureArrays[], int textureArraySize);
 };
 
 #endif

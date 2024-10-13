@@ -77,4 +77,9 @@
       <Filter>Source Files\Shader Source Files</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\textures\grass.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

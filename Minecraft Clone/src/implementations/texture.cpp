@@ -15,6 +15,7 @@ void Texture::bind() {
 }
 
 void Texture::loadFromPath(const char* filePath) {
+	this->bind();
 	const int currentType = this->type;
 	glTexParameteri(currentType, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(currentType, GL_TEXTURE_WRAP_T, GL_REPEAT);
