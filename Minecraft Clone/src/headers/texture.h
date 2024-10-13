@@ -7,8 +7,9 @@ class Texture {
 	public: 
 		unsigned int id;
 		int type;
+		GLenum unit;
 
-		Texture(int type);
+		Texture(int type, GLenum unit);
 
 		void bind();
 		void loadFromPath(const char* filePath);

@@ -81,7 +81,7 @@ void Window::windowLoop() {
 	VertexArray VAO;
 	VertexBuffer VBO(GL_ARRAY_BUFFER);
 	ElementBuffer EBO;
-	Texture testTexture(GL_TEXTURE_2D);
+	Texture testTexture(GL_TEXTURE_2D, GL_TEXTURE0);
 
 	testTexture.loadFromPath("./resources/textures/grass.jpg");
 

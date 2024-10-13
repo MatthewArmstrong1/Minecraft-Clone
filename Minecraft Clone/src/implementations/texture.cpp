@@ -5,12 +5,14 @@
 
 #include "texture.h"
 
-Texture::Texture(int type) {
+Texture::Texture(int type, GLenum unit) {
 	glGenTextures(1, &this->id);
 	this->type = type;
+	this->unit = unit;
 }
 
 void Texture::bind() {
+	glActiveTexture(this->unit);
 	glBindTexture(this->type, this->id);
 }
 
